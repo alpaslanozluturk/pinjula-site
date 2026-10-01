@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinjula</title>
+<style>
+:root{--bg:#F6F7FB;--fg:#16203F;--muted:#5B6480;--line:#DCE0EC;--chrome:#0A1F55;--on-chrome:#F3F5FC;--accent:#AB3F5B}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#182449;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"Segoe UI",Roboto,system-ui,sans-serif}
+header{background:var(--chrome);color:var(--on-chrome);padding:20px 16px}
+header a{color:var(--on-chrome);text-decoration:none;font-weight:700;font-size:1.15rem}
+nav{max-width:760px;margin:0 auto;display:flex;gap:18px;flex-wrap:wrap;align-items:baseline}
+nav .links a{font-weight:500;font-size:.95rem;opacity:.9}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+h1{font-size:1.7rem;line-height:1.25;margin:28px 0 12px}
+h2{font-size:1.3rem;margin:32px 0 8px}
+h3{font-size:1.08rem;margin:24px 0 6px}
+p,li{overflow-wrap:anywhere}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{max-width:760px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header><nav><a href="./">Pinjula</a><span class="links"><a href="./privacy/">Privacy</a> <a href="./delete-account/">Delete account</a></span></nav></header>
+<main>
+<h1 id="pinjula">Pinjula</h1>
+<p>Recipes and menus from sixteen cuisines, filtered for the allergies and diets of everyone at your table.</p>
+<ul><li>[Privacy policy](privacy/)</li><li>[Delete your account](delete-account/)</li></ul>
+</main>
+<footer>Pinjula · an independent developer</footer>
+</body>
+</html>
