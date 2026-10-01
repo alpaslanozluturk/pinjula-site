@@ -4,31 +4,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Delete your account — Pinjula</title>
+<meta name="description" content="Delete your account — Pinjula">
+<link rel="icon" href="../assets/logo-256.webp" type="image/webp">
 <style>
-:root{--bg:#F6F7FB;--fg:#16203F;--muted:#5B6480;--line:#DCE0EC;--chrome:#0A1F55;--on-chrome:#F3F5FC;--accent:#AB3F5B}
-@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#182449;--accent:#F48CA4;color-scheme:dark}}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"Segoe UI",Roboto,system-ui,sans-serif}
-header{background:var(--chrome);color:var(--on-chrome);padding:20px 16px}
-header a{color:var(--on-chrome);text-decoration:none;font-weight:700;font-size:1.15rem}
-nav{max-width:760px;margin:0 auto;display:flex;gap:18px;flex-wrap:wrap;align-items:baseline}
-nav .links a{font-weight:500;font-size:.95rem;opacity:.9}
-main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
-h1{font-size:1.7rem;line-height:1.25;margin:28px 0 12px}
-h2{font-size:1.3rem;margin:32px 0 8px}
-h3{font-size:1.08rem;margin:24px 0 6px}
-p,li{overflow-wrap:anywhere}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
 a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
 hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
-footer{max-width:760px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:.85rem}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
 </style>
 </head>
 <body>
-<header><nav><a href="../">Pinjula</a><span class="links"><a href="../privacy/">Privacy</a> <a href="../delete-account/">Delete account</a></span></nav></header>
-<main>
+<header class="bar"><nav><a class="brand" href="../"><img src="../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../privacy/">Privacy</a><a href="../delete-account/">Delete account</a></span></nav></header>
+<main class="doc">
 <h1 id="delete-your-account-pinjula">Delete your account — Pinjula</h1>
-<p><strong>App:</strong> Pinjula, on Google Play and the App Store <strong>Contact:</strong> support@pinjula.com <strong>Last updated:</strong> 1 October 2026</p>
+<p><strong>App:</strong> Pinjula, on Google Play and the App Store<br><strong>Contact:</strong> support@pinjula.com<br><strong>Last updated:</strong> 1 October 2026</p>
 <p><em>Türkçe metin için aşağı kaydırın. The English text is the authoritative version: if the English and the Turkish differ, the English prevails.</em></p>
 <hr>
 <h2 id="english">English</h2>
@@ -81,6 +106,6 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font
 <h3 id="sorular">Sorular</h3>
 <p>support@pinjula.com. Uygulamanın sakladığı ve gönderdiği her şeyi gizlilik politikasının tamamı anlatıyor.</p>
 </main>
-<footer>Pinjula · an independent developer</footer>
+<footer><div class="in"><span>Pinjula · an independent developer</span><a href="mailto:support@pinjula.com">support@pinjula.com</a><a href="../privacy/">Privacy policy</a><a href="../delete-account/">Delete your account</a></div></footer>
 </body>
 </html>
