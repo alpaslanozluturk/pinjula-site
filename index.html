@@ -35,6 +35,18 @@ code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
 footer{border-top:1px solid var(--line);margin-top:24px}
 footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
 footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
 .hero{background:var(--chrome);color:var(--on-chrome)}
 .hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
 .hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
@@ -50,7 +62,7 @@ footer a{color:var(--muted)}
 </style>
 </head>
 <body>
-<header class="bar"><nav><a class="brand" href="./"><img src="./assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="./privacy/">Privacy</a><a href="./delete-account/">Delete account</a></span></nav></header>
+<header class="bar"><nav><a class="brand" href="./"><img src="./assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="./privacy/">Privacy</a></span></nav></header>
 <section class="hero"><div class="in"><div>
 <h1>Dinner ideas for everyone at your table</h1>
 <p>Pinjula suggests home-cooked recipes and full meals from sixteen cuisines, filtered for the allergies, diets and dislikes of the people you cook for.</p>
@@ -63,6 +75,6 @@ footer a{color:var(--muted)}
 <div><h2>No repeats</h2><p>A dish you cooked does not come back for seven days, so the week stays varied.</p></div>
 </section>
 <section class="note"><p>The recipes, cultural notes and translations were written in-house with AI assistance and have not been reviewed by cooks from each culture; tell us when something is wrong. Allergen filtering is an aid, not a guarantee: always check the full ingredient list yourself. Pinjula is not a medical device and nutrition figures are estimates.</p></section>
-<footer><div class="in"><span>Pinjula · an independent developer</span><a href="mailto:support@pinjula.com">support@pinjula.com</a><a href="./privacy/">Privacy policy</a><a href="./delete-account/">Delete your account</a><a href="./consumer-health-data/">Consumer health data policy</a><a href="./provider-information/">Seller information</a></div></footer>
+<footer><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="./privacy/">Privacy</a><a href="./consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="./provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
 </body>
 </html>
