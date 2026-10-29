@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesabını sil — Pinjula</title>
+<meta name="description" content="Hesabını sil — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="it" href="../it/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a></p>
+<h1 id="hesabini-sil-pinjula">Hesabını sil — Pinjula</h1>
+<p><strong>Son güncelleme:</strong> 29 Ekim 2026</p>
+<h3 id="baslamadan-once">Başlamadan önce</h3>
+<p>Pinjula hesapsız çalışır. Hesabın yalnızca Premium satın almak ya da bir yapay zekâ özelliğini kullanmak için — Google ya da Apple ile — giriş yaptıysan vardır. Hiç giriş yapmadıysan silinecek bir hesap yoktur: uygulamayı kaldırmak, uygulamanın telefonunda sakladığı her şeyi siler.</p>
+<p><strong>Hesabını silmek bir Premium aboneliği iptal etmez.</strong> Aboneliği App Store ya da Google Play faturalandırır ve sen orada iptal edene kadar faturalandırmaya devam eder. Önce iptal et: App Store'da https://apps.apple.com/account/subscriptions adresinden, Google Play'de Play Store → Profil → Ödemeler ve abonelikler → Abonelikler bölümünden. Hesabını sildikten sonra abonelere gönderdiğimiz yenileme hatırlatmalarını ve bildirimlerini sana artık e-postayla gönderemeyiz; mağazan kendi bildirimlerini gönderir.</p>
+<h3 id="hesabini-uygulamanin-icinden-sil">Hesabını uygulamanın içinden sil</h3>
+<ol><li>Uygulamayı aç ve <strong>Ayarlar → Hesap</strong>'a (ya da <strong>Ayarlar → Gizlilik ve güvenlik</strong>'e) git.</li><li><strong>Hesabı sil</strong>'e dokun. Uygulama sana, sen iptal edene kadar faturalandırmanın mağaza üzerinden sürdüğünü ve abonelik e-postalarımızın duracağını söyler, nereden iptal edebileceğine bağlantı verir ve nelerin silineceğini gösterir. <strong>Devam et</strong>'e dokun.</li><li>Uygulamanın sana gösterdiği kelimeyi (Türkçede <strong>SİL</strong>) yaz ve <strong>Hesabımı sil</strong>'e dokun.</li></ol>
+<p>Uygulama telefondaki verilerini siler, oturumunu kapatır ve kendini Google'ın giriş kütüphanesinden ayırmaya çalışır; bir mesaj hesabının ve uygulamanın bu telefondaki verilerinin silindiğini doğrular. O sayfa ardından — isteğe bağlı olarak — neden ayrıldığını sorar: nedenler seçebilir ve bir not ekleyebilirsin; &quot;Gönder&quot;e dokunmadıkça hiçbir şey gönderilmez.</p>
+<h3 id="uygulama-olmadan-silinmesini-bizden-iste">Uygulama olmadan silinmesini bizden iste</h3>
+<p>Uygulama artık sende yoksa ya da onu açamıyorsan, <strong>support@pinjula.com</strong> adresine <strong>&quot;Hesabımı sil&quot;</strong> konusuyla e-posta gönder. Uygulamayı yeniden yüklemen gerekmez. E-postayı giriş yaptığın hesabın e-posta adresinden gönder ya da o adresi mesaja yaz. Apple'ın &quot;E-postamı Gizle&quot; özelliğini kullandıysan, Apple'ın bu uygulama için oluşturduğu aktarma adresini ver — Apple Hesabı ayarların onu Apple ile Giriş Yap altında listeler.</p>
+<p>Talebin senden geldiğinden emin olmak için o adrese cevap veririz ve sen onaylayınca hesabı sileriz. Talebi en geç 30 gün içinde tamamlarız.</p>
+<h3 id="ne-silinir-ne-zaman">Ne silinir, ne zaman</h3>
+<p><strong>Hemen, silme gerçekleştiğinde:</strong></p>
+<ul><li>sildiğin telefondaki uygulama verileri: kiler, alışveriş listesi, takvim, yemek defteri ve oraya kaydedilen tarifler, puanların ve notların, yemek pişirdiğin kişiler ve onlar için girilen her şey, rozetler, hatırlatıcılar, widget'lar, kullanım istatistikleri kimlikleri, indirilmiş yemek resimleri ve fotoğraf seçicinin uygulamanın önbelleğinde bıraktığı kopyalar. Bunlar hep yalnızca o telefonda bulunmuş verilerdir; bizde hiç olmadılar.</li></ul>
+<p><strong>Hemen, sunucularımızda:</strong></p>
+<ul><li>hesap kaydın, abonelik kaydın ve onun bildirim satırları (sana abonelik e-postalarını göndermek için tuttuğumuz küçük kayıtlar; hiçbiri e-posta adresini içermez);</li><li>girişinin silinmesi sıraya alınır.</li></ul>
+<p><strong>Normalde on beş dakika içinde:</strong></p>
+<ul><li>kimlik doğrulama sağlayıcımız Supabase'teki girişin — Google'ın ya da Apple'ın paylaştığı e-posta adresi, ad, profil resmi adresi ve hesap tanımlayıcısı — ve oturumların;</li><li>Premium satın alımlarını bizim için denetleyen RevenueCat, Inc.'in hesabının kimliği altında tuttuğu kayıt. RevenueCat'ten onu silmesini isteriz ve, uygulamayı hâlâ çalıştıran bir telefon onu yeniden oluşturmuş olabilir diye, yaklaşık bir saat, bir gün, üç gün ve yedi gün sonra yeniden isteriz;</li><li>bu ayki ve geçen ayki yapay zekâ isteklerinin sayısı — sunucumuzun, Premium'u aylık yapay zekâ isteği sınırında tutmak için hesabından türetilen bir kodun altında tuttuğu sayı. Bu adım başarısız olursa ya da başka bir telefonun, silmeden sonraki bir saat içinde, elinde zaten bulunan bir biletle sayıya eklerse, sayı izleyen ayın sonunda silinir.</li></ul>
+<p>Başka herhangi bir adım başarısız olursa başarılı olana kadar yeniden deneriz; silme tamamlanabilsin diye talep bir iç hesap numarası olarak kayıtta kalır. Apple ile giriş yaptıysan ve bir iPhone'da uygulamanın içinden siliyorsan, Apple senden bir kez daha onay ister; hesabın silindikten sonra Apple'ın tek kullanımlık kodunu kullanarak Apple'dan uygulamanın Apple ile Giriş Yap belirteçlerini iptal etmesini isteriz — yalnızca kod, Pinjula hesabının kullandığı Apple Hesabına aitse — ve bu, Pinjula'yı Apple Hesabından kaldırır. O sorudan vazgeçmek silmeyi durdurmaz; uygulamanın ne zaman bağlı kaldığı için &quot;Apple ve Google&quot;a bak.</p>
+<h3 id="ne-kalir-neden">Ne kalır, neden</h3>
+<ul><li><strong>Asgari bir satın alma kaydı, her tahsilattan itibaren üç yıl.</strong> Her tahsilat için: mağaza ve onun işlem numarası, ürün, tahsilatın günü, fiyat ve para birimi ve — Pinjula'nın Premium ekranından satın aldıysan — o ekranın sürümü ve dili ve satın alma düğmesine bastığın gün. Bu kayıtta ad, e-posta adresi, hesap kimliği ve giriş yoktur. Onu, bir aboneliği kabul ettiğini gösterebilmek için tutarız (Kaliforniya'nın otomatik yenileme yasası rıza kanıtının üç yıl saklanmasını ister).</li><li><strong>Yemek adları.</strong> Tarifini yazmamızı istediğin bir yemek adı, hesabınla ya da telefonunla hiçbir bağlantı olmadan sayıldı. Sayım, her adın ilk ve son ne zaman istendiğinin tarihini ve saatini tutar.</li><li><strong>Bir tarif hakkındaki raporlar.</strong> Bir tarifle ilgili bildirdiğin bir sorun, hesabınla ya da telefonunla hiçbir bağlantı olmadan saklandı; bu yüzden hesabını silmek onu bulamaz. Gönderdiğinden 12 ay sonra silinir — ya da onu bulmamıza yetecek bilgilerle (tarif, gün ve notunun sözleri) bize yazarsan daha erken.</li><li><strong>Neden ayrıldığın, söylediysen.</strong> Silmeden sonra gösterilen sayfadaki isteğe bağlı cevap, hesabınla ya da telefonunla hiçbir bağlantı olmadan 12 ay tutulur, sonra silinir.</li><li><strong>Kullanım istatistikleri.</strong> İzin verdiysen, PostHog'a gönderilenler hesabınla bağlantılı değildi ve hesabını silmek onları bulamaz. Hesabını silmek, istatistiklerin kimliklerini hesabı sildiğin telefondan siler.</li><li><strong>Hizmet kayıtları.</strong> Sunucumuzun kendi kayıt satırları — sayılar ve durum kodları; asla bir IP adresi, bir hesap ya da gönderdiğin herhangi bir şey değil — ve Cloudflare'in sunucumuza gelen her isteğe dair kaydı (zaman, istenen adres, cevabın durumu, IP adresi, isteğin teknik başlıkları — kısa ömürlü Premium geçiş belgesini de içerebilir — ve IP adresinden çıkarılan yaklaşık konum) Cloudflare tarafından en fazla yedi gün tutulur. Giriş hizmetimizi çalıştıran Supabase, giriş isteklerine, oturum yenilemelerine ve giriş olaylarına dair kayıtlarını — IP adresi, hesap kimliği, e-posta adresi, ad ve cihazın yazılım sürümüyle birlikte — kendi kayıt depolamasında, bizim belirlemediğimiz kendi saklama süresine göre tutar (29 Ekim 2026'da bu kayıtlar projenin 51 gün önceki ilk gününe kadar uzanıyordu; 7 Aralık 2026'da, en eskileri 90 günlük olduğunda, Supabase'ten 90 günden eski olanları silmesini isteriz); veritabanımızda ayrı bir giriş kaydı tutmayız. Bu kayıtlar hizmeti işletmek ve güvenliğini sağlamak için tutulur.</li><li><strong>Google'ın kötüye kullanım kayıtları.</strong> Google, Gemini yapay zekâsına yapılan istekleri kötüye kullanımı saptamak için en fazla 55 gün tutar. Onları hesabınla eşleştiremeyiz; bu yüzden bulamaz ya da silemeyiz; kendiliğinden sona ererler.</li><li><strong>Yedekler.</strong> Supabase şu anda veritabanımızın, her gün alınan, en fazla yedi yedeğini tutar; yani silinen şey en fazla yedi gün bir yedekte kalır. Şu anki planımızda yedekleri kendimiz açamaz ya da geri yükleyemeyiz. Projemiz bir gün kullanılmadığı için duraklatılırsa Supabase veritabanının o anki hâlinin bir kopyasını tutar; Supabase bu kopyayı ne kadar süre tuttuğunu belirtmez.</li><li><strong>Mağazaların kayıtları.</strong> Apple ve Google, satın alımlarına dair kendi kayıtlarını kendi politikaları uyarınca tutar.</li></ul>
+<h3 id="telefonlarda-ne-kalir">Telefonlarda ne kalır</h3>
+<p>Uygulamanın verileri hesabını sildiğin telefondan silinir; üç istisnası vardır: uygulamanın ara sıra gösterdiği Premium önerilerini seyrek tutan küçük kayıt kısaltılır (takvim günleri ve son pişirme işareti gider) ama silinmez; üyelik kütüphanesi planının cihazdaki kendi önbelleğini tutar; ve iPhone'da Google'ın anahtar zincirindeki kendi giriş oturumu uygulamanın kaldırılmasından sonra da kalabilir. Uygulamayı kaldırmak, uygulamanın kendi depolama alanında tuttuklarını siler. Uygulamayı kullandığın başka bir telefon, uygulama orada kaldırılana ya da orada başka bir hesap giriş yapıp uygulama önce bu verileri silene kadar verilerini tutar. Telefonunun Google ya da Apple'daki kendi hesabındaki bir yedeği hâlâ uygulamanın verilerinin bir kopyasını tutuyor olabilir; ona ulaşamayız; onu telefonunun yedekleme ayarlarından silebilirsin.</p>
+<h3 id="apple-ve-google">Apple ve Google</h3>
+<p>Hesabını silmek onu hizmetimizden kaldırır. Apple ile giriş yaptıysan ve bir iPhone'da uygulamanın içinden siliyorsan, Apple'dan uygulamanın Apple ile Giriş Yap belirteçlerini iptal etmesini de isteriz; bu, uygulamayı Apple Hesabına bağlı uygulamalardan kaldırır (yukarıya bak). <strong>Bu iptal gerçekleşmedikçe uygulama Apple Hesabına bağlı kalır</strong>; bu durum, sen onu Apple Hesabı ayarlarındaki Apple ile Giriş Yap altından kendin kaldırana kadar sürer. İptal şu durumlarda gerçekleşmez: Android'de ya da e-postayla sildiğinde; Apple'ın sorusundan vazgeçtiğinde ya da ona bir dakika içinde cevap vermediğinde; telefon, Pinjula hesabının kullandığından farklı bir Apple Hesabıyla giriş yapmışsa — o zaman hiçbir şey iptal edilmez ve Pinjula hesabının Apple Hesabı bağlı kalır; telefonda yarıda kalmış bir silme, uygulama bir sonraki açılışında tamamlandığında; ya da sunucumuz isteği yapamadığında veya Apple onu tamamlamadığında. Uygulamanın içinden sildiğinde uygulama, Google'ın giriş kütüphanesiyle bağlantısını keser. Bu, iPhone'da Pinjula'yı Google Hesabının üçüncü taraf bağlantılarından kaldırır; Android'de bunu yalnızca uygulamanın aynı kullanım oturumunda giriş yapılmış bir hesap için yapar. Bunun dışında ve e-postayla sildiğinde Pinjula, sen onu Google Hesabının güvenlik ayarlarındaki üçüncü taraf bağlantıları altından kendin kaldırana kadar bu bağlantılarda kalabilir.</p>
+<p><strong>Bir abonelik, hesabını silmekle iptal edilmez.</strong> Pinjula Premium'a abone olduysan, onu App Store ya da Google Play aboneliklerinde iptal et; sen iptal edene kadar mağaza onu yenilemeye devam eder.</p>
+<h3 id="sorular">Sorular</h3>
+<p>support@pinjula.com. Gizlilik politikasının tamamı, uygulamanın sakladığı ve gönderdiği her şeyi anlatır.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

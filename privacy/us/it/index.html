@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrazione sulla privacy per gli Stati Uniti — Pinjula</title>
+<meta name="description" content="Integrazione sulla privacy per gli Stati Uniti — Pinjula">
+<link rel="icon" href="../../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../../"><img src="../../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../../privacy/" aria-current="page">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></p>
+<h1 id="integrazione-sulla-privacy-per-gli-stati-uniti-pinjula">Integrazione sulla privacy per gli Stati Uniti — Pinjula</h1>
+<p><strong>Data di entrata in vigore:</strong> 29 ottobre 2026</p>
+<p>Questa pagina integra l’<a href="https://pinjula.com/privacy/notice/it/">Informativa sulla privacy</a> e si applica se vivi negli Stati Uniti. Quando ti dà più dell’informativa, si applica a te questa pagina. La applichiamo a tutti i residenti negli Stati Uniti, che la legge di un determinato stato lo richieda o meno. È redatta per rispettare le leggi della California e del Delaware sulle informative sulla privacy online, la legge del Nevada sulle informative online e gli obblighi di informativa delle leggi sulla privacy dei dati del Connecticut, del Texas e del Nebraska.</p>
+<h3 id="cosa-raccogliamo-e-da-dove">Cosa raccogliamo, e da dove</h3>
+<ul><li><em>Identificativi:</em> il tuo indirizzo IP (visto da ogni server che raggiungi, che tu abbia effettuato l’accesso o no); se accedi, il tuo indirizzo e-mail, il tuo nome (da Google, e da Apple su Android se Apple lo condivide), l’indirizzo della tua immagine del profilo Google, l’identificativo del tuo account Google o Apple (e, per un account Google Workspace, il suo dominio), le tue sessioni con il relativo indirizzo IP e lo user agent dell’app, e un numero di account interno, tutti conservati dal nostro servizio di accesso, Supabase; su iPhone, dopo che hai effettuato l’accesso, l’identificativo di Apple per questa app su questo telefono, che va a RevenueCat; e — solo se consenti le statistiche d’uso — un identificativo casuale per il tuo telefono e un identificativo del dispositivo derivato da esso. Fonti: tu, Google o Apple, e il tuo telefono. Finalità: gestire il tuo account, la sicurezza e le statistiche d’uso.</li><li><em>Informazioni commerciali:</em> se ti abboni, lo stato del tuo abbonamento e i tuoi registri di acquisto (prodotto, prezzo, date, se sei in un periodo di prova o hai annullato), ricevuti dall’App Store o da Google Play tramite RevenueCat. Finalità: confermare Premium, inviare gli avvisi dell’abbonamento e contare le prove, i rinnovi e gli annullamenti.</li><li><em>Attività su internet o nell’app:</em> gli eventi delle statistiche d’uso, solo se li consenti; il registro di ogni richiesta di Cloudflare, conservato fino a sette giorni; e, se usi le funzioni di IA, quante richieste di IA il tuo account ha inviato ogni mese, conservato sotto un codice derivato dal tuo account fino alla fine del mese successivo, per far rispettare a Premium il suo limite mensile. Finalità: consegnare le richieste, individuare guasti e attacchi, far rispettare il limite mensile di Premium e, per le statistiche, capire cosa migliorare.</li><li><em>Posizione approssimativa:</em> il paese, la regione, la città, il codice postale e le coordinate che Cloudflare ricava dal tuo indirizzo IP, conservati fino a sette giorni nel suo registro delle richieste. L’app non chiede mai la tua posizione. Finalità: individuare guasti e attacchi.</li><li><em>Informazioni che ci fornisci:</em> i nomi dei piatti che scrivi per la funzione di ricette con l’IA (e, con le funzioni di IA, il numero di persone per cui cucini), le segnalazioni su una ricetta e le risposte che scegli di inviare sul perché hai eliminato il tuo account (entrambe conservate senza alcun identificativo), e le e-mail che ci invii. Finalità: fornirti la funzione che hai chiesto, correggere le ricette, migliorare l’app e risponderti.</li><li><em>Informazioni personali sensibili:</em> non raccogliamo le allergie, le intolleranze, le diete né le altre informazioni sanitarie che inserisci; restano sul tuo telefono. Le immagini dei piatti e i piatti del catalogo inviati per pianificare la preparazione di un menù sono stati scelti con i filtri della tua famiglia, quindi possono mostrare che alcuni alimenti sono stati esclusi, ma non quali, per chi né perché. I piatti inviati per mescolare le cucine in un solo menù vengono scelti senza quei filtri. Le funzioni di IA li inviano solo dopo il tuo consenso esplicito, per fornirti la funzione che hai chiesto.</li></ul>
+<p>Non raccogliamo la posizione precisa del tuo telefono, documenti d’identità ufficiali, dati biometrici, i dati della tua carta di pagamento (il pagamento lo riscuote lo store), i tuoi contatti o la tua libreria di foto, né identificativi pubblicitari.</p>
+<h3 id="a-chi-le-comunichiamo">A chi le comunichiamo</h3>
+<p>Fornitori di servizi che agiscono per nostro conto e secondo le nostre istruzioni: Cloudflare (rete e archiviazione), Supabase (accesso e database), RevenueCat (abbonamenti), PostHog (statistiche d’uso, se le consenti), Google (le funzioni di IA, quando ne usi una) e Resend (e-mail dell’abbonamento). Porkbun, che ospita la nostra casella di posta per l’assistenza, e GitHub Pages, che ospita il nostro sito web (l’indirizzo IP di un visitatore). Apple e Google in quanto store di app e fornitori di accesso, e Apple quando il nostro server le chiede di revocare i token di accesso dell’app dopo che hai eliminato il tuo account. Le autorità, quando la legge lo richiede. Un successore, se il servizio viene trasferito. Non comunichiamo informazioni personali a nessun altro terzo. L’elenco completo, con il luogo in cui ciascuno tratta le informazioni, si trova nell’informativa, in «Chi le riceve, e dove».</p>
+<h3 id="non-vendiamo-ne-condividiamo-le-tue-informazioni-personali">Non vendiamo né condividiamo le tue informazioni personali</h3>
+<p>Non le vendiamo, non le «condividiamo» per la pubblicità comportamentale cross-context o per la pubblicità mirata, e l’app non contiene alcuna libreria pubblicitaria. Non usiamo le informazioni personali per profilarti né per prendere decisioni che producano effetti giuridici o effetti analogamente significativi su di te. <strong>Non usiamo le informazioni personali per addestrare modelli linguistici di grandi dimensioni,</strong> e Google non usa ciò che inviamo alla sua API Gemini per addestrare i propri modelli. Non vendiamo né condividiamo consapevolmente le informazioni personali di chi ha meno di 18 anni.</p>
+<h3 id="do-not-track-e-global-privacy-control">Do Not Track e Global Privacy Control</h3>
+<p>Pinjula non ti traccia attraverso le app o i siti web di altre aziende, e nessun altro soggetto raccoglie tramite Pinjula informazioni sulla tua attività nel tempo e su altri servizi, con un’eccezione: su iPhone l’app contiene la libreria di accesso di Google, che raccoglie dati secondo l’informativa sulla privacy di Google (dichiariamo ciò che raccoglie nei moduli dell’App Store e di Google Play). A parte quella libreria, che Google gestisce secondo la propria politica, non esiste alcun tracciamento di questo tipo, quindi un segnale Do Not Track o Global Privacy Control non ha nulla da disattivare. Le statistiche d’uso funzionano solo all’interno di Pinjula, sono disattivate finché non le consenti e possono essere disattivate nelle Impostazioni. <strong>I residenti del Nevada</strong> possono inviare a support@pinjula.com una richiesta di non vendere le loro informazioni coperte. Non vendiamo informazioni personali.</p>
+<h3 id="i-tuoi-diritti">I tuoi diritti</h3>
+<p>Puoi chiederci di confermare se trattiamo le tue informazioni personali e di fornirtene una copia; di correggerle; di eliminarle; di fornirtene una copia portabile; e di interrompere qualsiasi trattamento basato sul tuo consenso. Puoi anche chiedere l’elenco dei terzi a cui le abbiamo comunicate; non le abbiamo comunicate a nessuno oltre ai fornitori di servizi, agli store di app e ai fornitori di accesso indicati sopra.</p>
+<p>Ci sono due modi per chiedere. Nell’app, usa Impostazioni → Account → Esporta i miei dati o Elimina l'account, e gli interruttori in Impostazioni → Privacy e sicurezza. Oppure scrivi a support@pinjula.com dall’indirizzo e-mail con cui accedi — verifichiamo una richiesta rispondendo a quell’indirizzo — oppure, se non hai un account, dacci elementi sufficienti a trovare ciò che chiedi. Rispondiamo entro 45 giorni e possiamo prorogare una volta di 45 giorni, spiegandotene il motivo. Le richieste sono gratuite, e non ti trattiamo diversamente perché ne presenti una. Una persona che autorizzi per iscritto può presentare una richiesta per tuo conto.</p>
+<p><strong>Se rifiutiamo, puoi presentare ricorso</strong> rispondendo con «Ricorso» nell’oggetto. Decidiamo entro 45 giorni, spieghiamo la decisione e ti diciamo come contattare il procuratore generale del tuo stato: Washington (https://www.atg.wa.gov), Connecticut (https://portal.ct.gov/ag), Texas (https://www.texasattorneygeneral.gov), Nebraska (https://ago.nebraska.gov), Nevada (https://ag.nv.gov), o il procuratore generale dello stato in cui vivi.</p>
+<h3 id="dati-sanitari-dei-consumatori">Dati sanitari dei consumatori</h3>
+<p>Non raccogliamo dati sanitari dei consumatori. La nostra <a href="https://pinjula.com/consumer-health-data/it/">Informativa sulla privacy dei dati sanitari dei consumatori</a>, un documento separato che si applica ai residenti di Washington, del Nevada e del Connecticut e che applichiamo a tutti negli Stati Uniti, lo dice e spiega come farci domande al riguardo.</p>
+<h3 id="minori">Minori</h3>
+<p>Pinjula è destinata agli adulti e non è rivolta ai minori di 13 anni né ai minori di 18 anni. Non raccogliamo consapevolmente informazioni personali da chi ha meno di 18 anni. Se ritieni che una persona con meno di 18 anni abbia un account, scrivici e lo elimineremo.</p>
+<h3 id="abbonamenti">Abbonamenti</h3>
+<p>Gli avvisi che inviamo per i piani annuali e il promemoria annuale sono descritti nell’informativa, in «Premium, pagamenti ed e-mail dell’abbonamento». Le condizioni dell’abbonamento si trovano nei Termini di utilizzo.</p>
+<h3 id="incidenti-di-sicurezza">Incidenti di sicurezza</h3>
+<p>Se si verifica una violazione delle informazioni personali, lo notifichiamo a te e alle autorità come richiesto dalla legge — in base alle leggi statali sulle violazioni dei dati e, dove si applica, alla Health Breach Notification Rule della Federal Trade Commission. Il nostro server non conserva numeri di Social Security, dati di carte di pagamento né password, e nessuna delle tue informazioni sanitarie.</p>
+<h3 id="lingua">Lingua</h3>
+<p>Questa integrazione e l’informativa sono pubblicate in tutte le lingue in cui è offerta l’app: inglese, francese, spagnolo, tedesco, italiano e turco. Il testo inglese è l’originale; se una traduzione se ne discosta, prevale il testo inglese (vedi l’informativa, in «Lingue»).</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../../privacy/">Privacy</a><a href="../../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

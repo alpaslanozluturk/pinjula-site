@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité des données de santé des consommateurs — Pinjula</title>
+<meta name="description" content="Politique de confidentialité des données de santé des consommateurs — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a> · <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></p>
+<h1 id="politique-de-confidentialite-des-donnees-de-sante-des-consommateurs-pinjula">Politique de confidentialité des données de santé des consommateurs — Pinjula</h1>
+<p><strong>Date d’entrée en vigueur :</strong> 29 octobre 2026</p>
+<p><strong>Pour :</strong> les résidents de Washington, du Nevada et du Connecticut, ainsi que toute personne dont les données de santé de consommateur y sont recueillies. Nous l’appliquons à toute personne aux États-Unis.</p>
+<h3 id="1-les-donnees-de-sante-des-consommateurs-que-nous-recueillons">1. Les données de santé des consommateurs que nous recueillons</h3>
+<p>Aucune. Les allergies, les intolérances, les régimes et les autres éléments que vous saisissez au sujet des personnes pour qui vous cuisinez restent sur votre téléphone et ne sont pas recueillis par nous.</p>
+<h3 id="2-leur-provenance">2. Leur provenance</h3>
+<p>Nulle part : nous n’en recueillons aucune.</p>
+<h3 id="3-qui-les-recoit">3. Qui les reçoit</h3>
+<p>Personne. Nous n’en avons aucune à communiquer.</p>
+<h3 id="4-tiers-et-societes-affiliees">4. Tiers et sociétés affiliées</h3>
+<p>Nous ne communiquons de données de santé des consommateurs à aucun tiers, et nous n’avons aucune société affiliée.</p>
+<h3 id="5-vos-droits">5. Vos droits</h3>
+<p>Vous pouvez nous demander de confirmer si nous avons recueilli ou communiqué vos données de santé de consommateur et de vous y donner accès, y compris une liste de tous les tiers et de toutes les sociétés affiliées auxquels elles ont été communiquées (il n’y en a aucun); retirer tout consentement; et nous demander de les supprimer.</p>
+<ul><li><strong>Écrivez à</strong> support@pinjula.com. Nous vérifions votre demande en répondant à l’adresse depuis laquelle vous écrivez.</li><li><strong>Nous répondons dans un délai de 45 jours.</strong> Nous pouvons prolonger ce délai une fois de 45 jours, et nous vous en indiquons la raison. Les demandes sont gratuites.</li></ul>
+<h3 id="6-en-cas-de-refus-appel">6. En cas de refus : appel</h3>
+<p>Si nous refusons une demande, répondez à notre réponse avec la mention « Appel » dans l’objet. Nous rendons notre décision dans un délai de 45 jours et l’expliquons. Si vous n’obtenez pas satisfaction, vous pouvez porter plainte auprès du procureur général de votre État : Washington (https://www.atg.wa.gov), Connecticut (https://portal.ct.gov/ag) ou Nevada (https://ag.nv.gov).</p>
+<h3 id="7-nous-ne-vendons-pas-de-donnees-de-sante-des-consommateurs-et-nous-ne-pratiquons-pas-le-georeperage">7. Nous ne vendons pas de données de santé des consommateurs, et nous ne pratiquons pas le géorepérage</h3>
+<p>Nous ne vendons pas de données de santé des consommateurs, et nous n’établissons pas de zone de géorepérage autour d’un établissement de santé pour en recueillir ou pour vous envoyer un message.</p>
+<h3 id="8-nevada">8. Nevada</h3>
+<ul><li><strong>Pour consulter vos renseignements, ou pour nous demander de les modifier,</strong> écrivez à support@pinjula.com.</li><li><strong>Les modifications de la présente page</strong> sont annoncées sur cette page; voir la section 9.</li><li><strong>Aucun tiers ne recueille, par l’intermédiaire de Pinjula, de données de santé des consommateurs à votre sujet à travers des sites Web ou des applications.</strong></li><li><strong>Date d’entrée en vigueur :</strong> 29 octobre 2026.</li></ul>
+<h3 id="9-modifications">9. Modifications</h3>
+<p>Lorsque nous modifions la présente page, nous publions le nouveau texte ici et modifions la date d’entrée en vigueur indiquée plus haut. Nous demandons votre consentement lorsque la loi l’exige.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

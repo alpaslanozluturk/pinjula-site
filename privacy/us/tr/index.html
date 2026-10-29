@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABD gizlilik eki — Pinjula</title>
+<meta name="description" content="ABD gizlilik eki — Pinjula">
+<link rel="icon" href="../../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="it" href="../it/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../../"><img src="../../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../../privacy/" aria-current="page">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a></p>
+<h1 id="abd-gizlilik-eki-pinjula">ABD gizlilik eki — Pinjula</h1>
+<p><strong>Yürürlük tarihi:</strong> 29 Ekim 2026</p>
+<p>Bu sayfa <a href="https://pinjula.com/privacy/notice/tr/">Gizlilik Bildirimi</a> metnine ekleme yapar ve Amerika Birleşik Devletleri'nde yaşıyorsan geçerlidir. Sana bildirimden daha fazlasını sağladığı durumlarda, sana bu sayfa uygulanır. Belirli bir eyaletin yasası gerektirsin ya da gerektirmesin, onu her ABD sakinine uygularız. Kaliforniya'nın ve Delaware'in çevrimiçi gizlilik bildirimi yasalarını, Nevada'nın çevrimiçi bildirim yasasını ve Connecticut, Texas ve Nebraska veri gizliliği yasalarının bildirim yükümlülüklerini karşılamak için yazılmıştır.</p>
+<h3 id="ne-topluyoruz-ve-nereden">Ne topluyoruz ve nereden</h3>
+<ul><li><em>Tanımlayıcılar:</em> IP adresin (giriş yapmış olsan da olmasan da ulaştığın her sunucu onu görür); giriş yaparsan, e-posta adresin, adın (Google'dan ve, Apple paylaşırsa, Android'de Apple'dan), Google profil resminin adresi, Google ya da Apple hesap kimliğin (ve bir Google Workspace hesabıysa onun alan adı), IP adresi ve uygulamanın kullanıcı aracısıyla birlikte oturumların ve bir iç hesap numarası — bunları giriş hizmetimiz Supabase tutar; iPhone'da, giriş yaptıktan sonra, Apple'ın bu telefondaki bu uygulama için verdiği ve RevenueCat'e giden tanımlayıcı; ve — yalnızca kullanım istatistiklerine izin verirsen — telefonun için rastgele bir kimlik ve ondan türetilmiş bir cihaz kimliği. Kaynaklar: sen, Google ya da Apple ve telefonun. Amaçlar: hesabını yürütmek, güvenlik ve kullanım istatistikleri.</li><li><em>Ticari bilgiler:</em> abone olursan, RevenueCat aracılığıyla App Store ya da Google Play'den alınan abonelik durumun ve satın alma kayıtların (ürün, fiyat, tarihler, denemede olup olmadığın ya da iptal edip etmediğin). Amaçlar: Premium'u doğrulamak, abonelik bildirimlerini göndermek ve denemeleri, yenilemeleri ve iptalleri saymak.</li><li><em>İnternet ya da uygulama etkinliği:</em> yalnızca izin verirsen kullanım istatistikleri olayları; Cloudflare'in en fazla yedi gün tutulan, her isteğe dair kaydı; ve, yapay zekâ özelliklerini kullanırsan, Premium'u aylık sınırında tutmak için hesabından türetilen bir kodun altında izleyen ayın sonuna kadar tutulan, hesabının her ay kaç yapay zekâ isteği gönderdiği. Amaçlar: istekleri ulaştırmak, arızaları ve saldırıları bulmak, Premium'u aylık sınırında tutmak ve, istatistikler için, neyi iyileştireceğimizi görmek.</li><li><em>Yaklaşık konum:</em> Cloudflare'in IP adresinden çıkardığı ve istek kaydında en fazla yedi gün tutulan ülke, bölge, şehir, posta kodu ve koordinatlar. Uygulama konumunu asla istemez. Amaçlar: arızaları ve saldırıları bulmak.</li><li><em>Bize verdiğin bilgiler:</em> yapay zekâ tarif özelliği için yazdığın yemek adları (ve, yapay zekâ özellikleriyle, yemek pişirdiğin kişi sayısı), bir tarif hakkındaki raporlar ve hesabını neden sildiğine dair göndermeyi seçtiğin cevaplar (ikisi de hiçbir tanımlayıcı olmadan saklanır) ve bize gönderdiğin e-postalar. Amaçlar: istediğin özelliği sana sunmak, tarifleri düzeltmek, uygulamayı iyileştirmek ve sana cevap vermek.</li><li><em>Hassas kişisel bilgiler:</em> girdiğin alerjileri, intoleransları, diyetleri ya da diğer sağlık bilgilerini toplamayız; bunlar telefonunda kalır. Yemek resimleri ve bir menünün nasıl pişirileceğini planlamak için gönderilen katalog yemekleri hanenin filtreleriyle seçilmiştir; bu yüzden bazı yiyeceklerin dışarıda bırakıldığını gösterebilirler, ama hangilerinin, kimin için ya da neden bırakıldığını göstermezler. Mutfakları tek menüde karıştırmak için gönderilen yemekler bu filtreler olmadan seçilir. Yapay zekâ özellikleri bunları yalnızca açık rızandan sonra, istediğin özelliği sana sunmak için gönderir.</li></ul>
+<p>Telefonundan kesin konum, resmî kimlik belgeleri, biyometrik veriler, ödeme kartı bilgileri (ödemeyi mağaza alır), rehberin ya da fotoğraf kitaplığın veya reklam tanımlayıcıları toplamayız.</p>
+<h3 id="kime-acikliyoruz">Kime açıklıyoruz</h3>
+<p>Bizim adımıza ve talimatlarımızla hareket eden hizmet sağlayıcılar: Cloudflare (ağ ve depolama), Supabase (giriş ve veritabanı), RevenueCat (abonelikler), PostHog (izin verirsen kullanım istatistikleri), Google (birini kullandığında yapay zekâ özellikleri) ve Resend (abonelik e-postaları). Destek posta kutumuzu barındıran Porkbun ve web sitemizi barındıran GitHub Pages (bir ziyaretçinin IP adresi). Uygulama mağazaları ve giriş sağlayıcıları olarak Apple ve Google; hesabını sildikten sonra sunucumuz Apple'dan uygulamanın giriş belirteçlerini iptal etmesini istediğinde de Apple. Yasanın gerektirdiği yerde yetkili makamlar. Hizmet devredilirse bir halef. Kişisel bilgileri başka hiçbir üçüncü tarafa açıklamayız. Her birinin bilgileri nerede işlediğiyle birlikte tam liste, Gizlilik Bildirimi'nin &quot;Kimler alıyor ve nerede&quot; başlığı altındadır.</p>
+<h3 id="kisisel-bilgilerini-satmayiz-ya-da-paylasmayiz">Kişisel bilgilerini satmayız ya da paylaşmayız</h3>
+<p>Onları satmayız, bağlamlar arası davranışsal reklam ya da hedefli reklam için &quot;paylaşmayız&quot; ve uygulamada reklam kütüphanesi yoktur. Kişisel bilgileri seni profillemek ya da hakkında hukuki ya da benzer ölçüde önemli sonuçlar doğuran kararlar vermek için kullanmayız. <strong>Kişisel bilgileri büyük dil modellerini eğitmek için kullanmayız;</strong> Google da Gemini API'sine gönderdiklerimizi modellerini eğitmek için kullanmaz. 18 yaşından küçük hiç kimsenin kişisel bilgilerini bilerek satmayız ya da paylaşmayız.</p>
+<h3 id="do-not-track-ve-global-privacy-control">Do Not Track ve Global Privacy Control</h3>
+<p>Pinjula seni başka şirketlerin uygulamaları ya da web siteleri genelinde izlemez ve başka hiçbir taraf Pinjula aracılığıyla zaman içinde ve başka hizmetler genelinde etkinliğin hakkında bilgi toplamaz; tek bir istisna vardır: iPhone'da uygulama, Google'ın kendi gizlilik politikası uyarınca bilgi toplayan Google giriş kütüphanesini içerir (topladıklarını App Store ve Google Play formlarında beyan ederiz). Google'ın kendi politikası uyarınca çalıştırdığı bu kütüphane dışında böyle bir izleme yoktur; bu yüzden bir Do Not Track ya da Global Privacy Control sinyalinin kapatacağı bir şey yoktur. Kullanım istatistikleri yalnızca Pinjula'nın içinde çalışır, sen izin verene kadar kapalıdır ve Ayarlar'dan kapatılabilir. <strong>Nevada sakinleri</strong>, kapsanan bilgilerinin satılmaması talebini support@pinjula.com adresine gönderebilir. Kişisel bilgi satmayız.</p>
+<h3 id="haklarin">Hakların</h3>
+<p>Kişisel bilgilerini işleyip işlemediğimizi doğrulamamızı ve sana bir kopyasını vermemizi; onları düzeltmemizi; silmemizi; sana taşınabilir bir kopya vermemizi; ve rızana dayanan her işlemeyi durdurmamızı isteyebilirsin. Ayrıca onları açıkladığımız üçüncü tarafların listesini de isteyebilirsin; onları yukarıda adı geçen hizmet sağlayıcılar, uygulama mağazaları ve giriş sağlayıcıları dışında hiç kimseye açıklamadık.</p>
+<p>Talepte bulunmanın iki yolu var. Uygulamada Ayarlar → Hesap → Verilerimi dışa aktar ya da Hesabı sil'i ve Ayarlar → Gizlilik ve güvenlik altındaki anahtarları kullan. Ya da support@pinjula.com adresine giriş yaptığın e-posta adresinden yaz — bir talebi o adrese cevap vererek doğrularız — ya da, hesabın yoksa, sorduğun şeyi bulmamıza yetecek kadar bilgi ver. 45 gün içinde cevap veririz ve nedenini söyleyerek bu süreyi bir kez 45 gün uzatabiliriz. Talepler ücretsizdir ve bir talepte bulunduğun için sana farklı davranmayız. Yazılı olarak yetkilendirdiğin biri senin adına talepte bulunabilir.</p>
+<p><strong>Reddedersek itiraz edebilirsin</strong>: konu satırına &quot;İtiraz&quot; yazarak cevap ver. 45 gün içinde karar verir, kararı açıklar ve eyaletinin başsavcısıyla nasıl iletişime geçebileceğini söyleriz: Washington (https://www.atg.wa.gov), Connecticut (https://portal.ct.gov/ag), Texas (https://www.texasattorneygeneral.gov), Nebraska (https://ago.nebraska.gov), Nevada (https://ag.nv.gov) ya da kendi eyaletinin başsavcısı.</p>
+<h3 id="tuketici-saglik-verileri">Tüketici sağlık verileri</h3>
+<p>Tüketici sağlık verisi toplamayız. Washington, Nevada ve Connecticut sakinleri için geçerli olan ve Amerika Birleşik Devletleri'ndeki herkese uyguladığımız ayrı <a href="https://pinjula.com/consumer-health-data/tr/">Tüketici Sağlık Verileri Gizlilik Politikamız</a> bunu ve bize bu konuda nasıl soru sorabileceğini söyler.</p>
+<h3 id="cocuklar">Çocuklar</h3>
+<p>Pinjula yetişkinler içindir ve 13 yaşından ya da 18 yaşından küçük çocuklara yönelik değildir. 18 yaşından küçük hiç kimseden bilerek kişisel bilgi toplamayız. 18 yaşından küçük birinin hesabı olduğuna inanıyorsan bize yaz; hesabı sileriz.</p>
+<h3 id="abonelikler">Abonelikler</h3>
+<p>Yıllık planlar için gönderdiğimiz bildirimler ve yıllık hatırlatma, Gizlilik Bildirimi'nin &quot;Premium, ödemeler ve abonelik e-postaları&quot; başlığı altında anlatılır. Abonelik koşulları Kullanım Koşulları'ndadır.</p>
+<h3 id="guvenlik-olaylari">Güvenlik olayları</h3>
+<p>Kişisel bilgiler ihlal edilirse sana ve yetkili makamlara yasanın gerektirdiği gibi — eyalet ihlal yasaları uyarınca ve uygulandığı yerde Federal Ticaret Komisyonu'nun Health Breach Notification Rule'u (Sağlık İhlali Bildirim Kuralı) uyarınca — bildiririz. Sunucumuzda Sosyal Güvenlik numarası, ödeme kartı verisi ya da parola yoktur; sağlık bilgilerinden hiçbiri de yoktur.</p>
+<h3 id="dil">Dil</h3>
+<p>Bu ek metin ve Gizlilik Bildirimi, uygulamanın sunulduğu her dilde yayımlanır: İngilizce, Fransızca, İspanyolca, Almanca, İtalyanca ve Türkçe. Asıl metin İngilizce metindir; bir çeviri ondan ayrıldığı yerde İngilizce metin geçerlidir (Gizlilik Bildirimi'nin &quot;Diller&quot; başlığına bak).</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../../privacy/">Privacy</a><a href="../../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

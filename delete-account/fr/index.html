@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer votre compte — Pinjula</title>
+<meta name="description" content="Supprimer votre compte — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a> · <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></p>
+<h1 id="supprimer-votre-compte-pinjula">Supprimer votre compte — Pinjula</h1>
+<p><strong>Dernière mise à jour :</strong> 29 octobre 2026</p>
+<h3 id="avant-de-commencer">Avant de commencer</h3>
+<p>Pinjula fonctionne sans compte. Vous n’en avez un que si vous vous êtes connecté — avec Google ou Apple — pour acheter Premium ou pour utiliser une fonction d’IA. Si vous ne vous êtes jamais connecté, il n’y a aucun compte à supprimer : la désinstallation de l’application supprime tout ce qu’elle stocke sur votre téléphone.</p>
+<p><strong>La suppression de votre compte n’annule pas un abonnement Premium.</strong> L’App Store ou Google Play le facture, et continue de le facturer tant que vous ne l’y annulez pas. Annulez d’abord : sur l’App Store, à l’adresse https://apps.apple.com/account/subscriptions; sur Google Play, dans Play Store → Profil → Paiements et abonnements → Abonnements. Après la suppression de votre compte, nous ne pouvons plus vous envoyer par courriel les rappels de renouvellement et les avis que nous envoyons aux abonnés; votre boutique envoie les siens.</p>
+<h3 id="supprimer-votre-compte-dans-l-application">Supprimer votre compte dans l’application</h3>
+<ol><li>Ouvrez l’application et allez à <strong>Réglages → Compte</strong> (ou <strong>Réglages → Confidentialité et sécurité</strong>).</li><li>Appuyez sur <strong>Supprimer le compte</strong>. L’application vous indique que la facturation se poursuit par l’intermédiaire de la boutique tant que vous n’annulez pas et que nos courriels d’abonnement cessent, offre un lien vers l’endroit où vous pouvez annuler et montre ce qui sera supprimé. Appuyez sur <strong>Continuer</strong>.</li><li>Saisissez le mot que l’application vous montre (<strong>SUPPRIMER</strong> en français) et appuyez sur <strong>Supprimer mon compte</strong>.</li></ol>
+<p>L’application supprime ses données sur le téléphone, ferme votre session et tente de se dissocier de la bibliothèque de connexion de Google, et un message confirme que votre compte et les données de l’application sur ce téléphone ont été supprimés. Cette page vous demande ensuite — de façon facultative — pourquoi vous partez : vous pouvez choisir des motifs et ajouter une note, et rien n’est envoyé tant que vous n’appuyez pas sur « Envoyer ».</p>
+<h3 id="demander-la-suppression-sans-l-application">Demander la suppression sans l’application</h3>
+<p>Si vous n’avez plus l’application ou ne pouvez pas l’ouvrir, écrivez par courriel à <strong>support@pinjula.com</strong> en indiquant l’objet <strong>« Supprimer mon compte »</strong>. Vous n’avez pas besoin de réinstaller l’application. Envoyez le message depuis l’adresse courriel du compte avec lequel vous vous êtes connecté, ou inscrivez cette adresse dans le message. Si vous avez utilisé la fonction « Masquer mon adresse courriel » d’Apple, indiquez l’adresse de relais qu’Apple a créée pour cette application — les réglages de votre compte Apple la répertorient sous « Se connecter avec Apple ».</p>
+<p>Pour nous assurer que la demande vient de vous, nous répondons à cette adresse et supprimons le compte une fois que vous avez confirmé. Nous menons la demande à terme dans un délai de 30 jours au plus tard.</p>
+<h3 id="ce-qui-est-supprime-et-quand">Ce qui est supprimé, et quand</h3>
+<p><strong>Immédiatement, lorsque la suppression est effectuée :</strong></p>
+<ul><li>les données de l’application sur le téléphone à partir duquel vous supprimez : le garde-manger, la liste d’épicerie, le calendrier, le livre de recettes et les recettes qui y sont enregistrées, vos évaluations et vos notes, les personnes pour qui vous cuisinez et tout ce qui a été saisi pour elles, les badges, les rappels, les widgets, les identifiants des statistiques d’utilisation, les images de plats téléchargées et les copies que le sélecteur de photos a laissées dans la mémoire cache de l’application. Ce sont des données qui n’ont jamais été que sur ce téléphone; nous ne les avons jamais eues.</li></ul>
+<p><strong>Immédiatement, sur nos serveurs :</strong></p>
+<ul><li>l’enregistrement de votre compte, votre enregistrement d’abonnement et ses lignes d’avis (les petits enregistrements que nous conservons pour vous envoyer des courriels d’abonnement; aucun ne contient votre adresse courriel);</li><li>la suppression de votre connexion est mise en file d’attente.</li></ul>
+<p><strong>Normalement en moins de quinze minutes :</strong></p>
+<ul><li>votre connexion chez notre fournisseur d’authentification, Supabase — l’adresse courriel, le nom, l’adresse de la photo de profil et l’identifiant de compte que Google ou Apple a communiqués, ainsi que vos sessions;</li><li>l’enregistrement détenu sous l’identifiant de votre compte par RevenueCat, Inc., qui valide les achats Premium pour nous. Nous demandons à RevenueCat de le supprimer, et le lui demandons de nouveau environ une heure, un jour, trois jours et sept jours plus tard, au cas où un téléphone exécutant encore l’application l’aurait recréé;</li><li>le décompte de vos demandes d’IA pour ce mois-ci et le mois dernier — le nombre que notre serveur conserve, sous un code calculé à partir de votre compte, pour appliquer la limite mensuelle de demandes d’IA de Premium. Si cette étape échoue, ou si un autre de vos téléphones ajoute au décompte, dans l’heure qui suit la suppression, au moyen d’un billet qu’il détenait déjà, le décompte est supprimé à la fin du mois suivant.</li></ul>
+<p>Si une autre étape échoue, nous réessayons jusqu’à ce qu’elle réussisse; la demande demeure au dossier sous la forme d’un numéro de compte interne afin que la suppression puisse être menée à terme. Si vous vous êtes connecté avec Apple et supprimez dans l’application sur un iPhone, Apple vous demande de confirmer une fois de plus, et une fois votre compte supprimé, nous utilisons le code à usage unique d’Apple pour lui demander de révoquer les jetons « Se connecter avec Apple » de l’application (seulement si le code appartient au compte Apple qu’utilise votre compte Pinjula), ce qui retire Pinjula de votre compte Apple. L’annulation de cette demande d’Apple n’arrête pas la suppression; voir « Apple et Google » pour savoir dans quels cas l’application reste connectée.</p>
+<h3 id="ce-qui-est-conserve-et-pourquoi">Ce qui est conservé, et pourquoi</h3>
+<ul><li><strong>Un enregistrement d’achat minimal, pendant trois ans à compter de chaque débit.</strong> Pour chaque débit : la boutique et son numéro de transaction, le produit, le jour du débit, le prix et la devise, et — lorsque vous avez acheté à partir de l’écran Premium de Pinjula — la version et la langue de cet écran ainsi que le jour où vous avez appuyé sur son bouton d’achat. Il ne contient ni nom, ni adresse courriel, ni identifiant de compte, ni connexion. Nous le conservons afin de pouvoir démontrer que vous avez accepté un abonnement (la loi de la Californie sur le renouvellement automatique exige la preuve du consentement pendant trois ans).</li><li><strong>Noms de plats.</strong> Un nom de plat pour lequel vous nous avez demandé d’écrire une recette a été comptabilisé sans aucun lien avec votre compte ou votre téléphone. Le décompte conserve la date et l’heure de la première et de la dernière demande de chaque nom.</li><li><strong>Signalements concernant une recette.</strong> Un problème que vous avez signalé au sujet d’une recette a été stocké sans aucun lien avec votre compte ou votre téléphone; la suppression de votre compte ne peut donc pas le retrouver. Il est supprimé 12 mois après son envoi — ou plus tôt si vous nous écrivez en fournissant de quoi le retrouver (la recette, le jour et les mots de votre note).</li><li><strong>La raison de votre départ, si vous nous l’avez donnée.</strong> La réponse facultative donnée sur la page qui s’affiche après la suppression est conservée pendant 12 mois sans aucun lien avec votre compte ou votre téléphone, puis supprimée.</li><li><strong>Statistiques d’utilisation.</strong> Si vous les avez autorisées, ce qui a été envoyé à PostHog n’était pas lié à votre compte, et la suppression de votre compte ne peut pas le retrouver. La suppression de votre compte supprime leurs identifiants du téléphone sur lequel vous la faites.</li><li><strong>Journaux de service.</strong> Les lignes de journal propres à notre serveur — des décomptes et des codes d’état, jamais une adresse IP, un compte ni rien de ce que vous avez envoyé — et l’enregistrement de chaque requête adressée à notre serveur par Cloudflare (heure, adresse demandée, état de la réponse, adresse IP, en-têtes techniques de la requête — qui peuvent comprendre le laissez-passer Premium de courte durée — et localisation approximative qui en est déduite) sont conservés par Cloudflare pendant au plus sept jours. Supabase, qui exploite notre service de connexion, conserve ses enregistrements des requêtes de connexion, des renouvellements de session et des événements de connexion — avec l’adresse IP, l’identifiant de compte, l’adresse courriel, le nom et la version logicielle de l’appareil — dans son propre stockage de journaux, selon sa propre durée de conservation, que nous ne fixons pas (le 29 octobre 2026, ils remontaient au premier jour du projet, 51 jours plus tôt; le 7 décembre 2026, lorsque les plus anciens auront 90 jours, nous demanderons à Supabase de supprimer ceux qui ont plus de 90 jours); nous ne conservons aucun journal de connexion distinct dans notre base de données. Ils sont conservés pour exploiter et sécuriser le service.</li><li><strong>Journaux d’abus de Google.</strong> Google conserve les requêtes adressées à son IA Gemini jusqu’à 55 jours pour détecter les utilisations abusives. Nous ne pouvons pas les associer à votre compte; nous ne pouvons donc pas les retrouver ni les supprimer; elles expirent d’elles-mêmes.</li><li><strong>Sauvegardes.</strong> Supabase conserve actuellement jusqu’à sept sauvegardes quotidiennes de notre base de données; ce qui a été supprimé demeure donc dans une sauvegarde jusqu’à sept jours. Avec notre forfait actuel, nous ne pouvons pas les ouvrir ni les restaurer nous-mêmes. Si notre projet était un jour mis en pause pour cause d’inactivité, Supabase conserverait une copie de la base de données dans l’état où elle se trouvait alors; Supabase ne précise pas pendant combien de temps.</li><li><strong>Les enregistrements des boutiques.</strong> Apple et Google conservent leurs propres enregistrements de vos achats, selon leurs propres politiques.</li></ul>
+<h3 id="ce-qui-reste-sur-les-telephones">Ce qui reste sur les téléphones</h3>
+<p>Les données de l’application sont supprimées du téléphone à partir duquel vous supprimez votre compte, avec trois exceptions : le petit enregistrement qui garde rares les suggestions Premium occasionnelles de l’application est réduit (ses jours de calendrier et sa dernière marque de plat cuisiné disparaissent), mais non supprimé; la bibliothèque d’abonnement conserve sa propre mémoire cache de votre formule sur l’appareil; et, sur iPhone, la session de connexion propre à Google dans le trousseau peut survivre à la désinstallation de l’application. La désinstallation de l’application supprime ce qu’elle conserve dans son propre espace de stockage. Un autre téléphone sur lequel vous avez utilisé l’application conserve ses données jusqu’à ce que l’application y soit désinstallée, ou jusqu’à ce qu’un autre compte s’y connecte et que l’application les supprime d’abord. Une sauvegarde de votre téléphone dans votre propre compte Google ou Apple peut encore contenir une copie des données de l’application; nous n’y avons pas accès, et vous pouvez la supprimer dans les réglages de sauvegarde de votre téléphone.</p>
+<h3 id="apple-et-google">Apple et Google</h3>
+<p>La suppression de votre compte le retire de notre service. Si vous vous êtes connecté avec Apple et supprimez dans l’application sur un iPhone, nous demandons aussi à Apple de révoquer les jetons « Se connecter avec Apple » de l’application, ce qui retire cette application des applications connectées à votre compte Apple (voir plus haut). <strong>À moins que cette révocation n’aboutisse, l’application reste connectée à votre compte Apple</strong> tant que vous ne la retirez pas vous-même, sous « Se connecter avec Apple » dans les réglages de votre compte Apple. Elle n’aboutit pas lorsque vous supprimez sur Android ou par courriel; lorsque vous annulez la demande d’Apple ou n’y répondez pas dans la minute; lorsque le téléphone est connecté à un compte Apple différent de celui qu’utilise votre compte Pinjula — rien n’est alors révoqué, et le compte Apple associé à votre compte Pinjula reste connecté; lorsqu’une suppression interrompue sur le téléphone est menée à terme au prochain démarrage de l’application; ou lorsque notre serveur ne peut pas présenter la requête ou qu’Apple ne la mène pas à terme. Lorsque vous supprimez dans l’application, celle-ci se dissocie de la bibliothèque de connexion de Google. Cela retire Pinjula des connexions à des applications et services tiers de votre compte Google sur iPhone; sur Android, cela ne le fait que pour un compte connecté pendant la même session d’utilisation de l’application. Autrement, et lorsque vous supprimez par courriel, Pinjula peut rester dans ces connexions tant que vous ne l’en retirez pas vous-même, dans les paramètres de sécurité de votre compte Google, sous les connexions à des applications et services tiers.</p>
+<p><strong>La suppression de votre compte n’annule pas un abonnement.</strong> Si vous vous êtes abonné à Pinjula Premium, annulez-le dans vos abonnements App Store ou Google Play; tant que vous ne l’avez pas fait, la boutique continue de le renouveler.</p>
+<h3 id="questions">Questions</h3>
+<p>support@pinjula.com. La politique de confidentialité complète décrit tout ce que l’application stocke et envoie.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dein Konto löschen — Pinjula</title>
+<meta name="description" content="Dein Konto löschen — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a> · <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></p>
+<h1 id="dein-konto-loschen-pinjula">Dein Konto löschen — Pinjula</h1>
+<p><strong>Zuletzt aktualisiert:</strong> 29. Oktober 2026</p>
+<h3 id="bevor-du-beginnst">Bevor du beginnst</h3>
+<p>Pinjula funktioniert ohne Konto. Du hast nur dann eines, wenn du dich angemeldet hast — mit Google oder Apple —, um Premium zu kaufen oder eine KI-Funktion zu nutzen. Wenn du dich nie angemeldet hast, gibt es kein Konto zu löschen: Wenn du die App deinstallierst, wird alles gelöscht, was sie auf deinem Telefon speichert.</p>
+<p><strong>Das Löschen deines Kontos kündigt kein Premium-Abo.</strong> Der App Store oder Google Play rechnet es ab und rechnet es weiter ab, bis du es dort kündigst. Kündige zuerst: im App Store unter https://apps.apple.com/account/subscriptions, bei Google Play unter Play Store → Profil → Zahlungen und Abos → Abos. Nachdem du dein Konto gelöscht hast, können wir dir die Verlängerungserinnerungen und Mitteilungen, die wir an Abonnentinnen und Abonnenten senden, nicht mehr per E-Mail schicken; dein Store sendet seine eigenen.</p>
+<h3 id="dein-konto-in-der-app-loschen">Dein Konto in der App löschen</h3>
+<ol><li>Öffne die App und geh zu <strong>Einstellungen → Konto</strong> (oder <strong>Einstellungen → Datenschutz &amp; Sicherheit</strong>).</li><li>Tippe auf <strong>Konto löschen</strong>. Die App sagt dir, dass die Abrechnung über den Store weiterläuft, bis du kündigst, und dass unsere Abo-E-Mails aufhören, verlinkt, wo du kündigen kannst, und zeigt, was gelöscht wird. Tippe auf <strong>Weiter</strong>.</li><li>Tippe das Wort ein, das die App dir zeigt (auf Deutsch <strong>LÖSCHEN</strong>), und tippe auf <strong>Mein Konto löschen</strong>.</li></ol>
+<p>Die App löscht ihre Daten auf dem Telefon, meldet dich ab und versucht, sich von der Anmeldebibliothek von Google zu trennen, und eine Nachricht bestätigt, dass dein Konto und die Daten der App auf diesem Telefon gelöscht wurden. Diese Seite fragt dann — freiwillig — warum du gehst: Du kannst Gründe auswählen und eine Notiz hinzufügen, und nichts wird gesendet, außer du tippst auf „Senden“.</p>
+<h3 id="die-loschung-ohne-die-app-bei-uns-beantragen">Die Löschung ohne die App bei uns beantragen</h3>
+<p>Wenn du die App nicht mehr hast oder sie nicht öffnen kannst, schreib eine E-Mail an <strong>support@pinjula.com</strong> mit dem Betreff <strong>„Mein Konto löschen“</strong>. Du musst die App nicht neu installieren. Sende sie von der E-Mail-Adresse des Kontos, mit dem du dich angemeldet hast, oder schreib diese Adresse in die Nachricht. Wenn du „E-Mail-Adresse verbergen“ von Apple genutzt hast, gib die Weiterleitungsadresse an, die Apple für diese App erstellt hat — die Einstellungen deines Apple Accounts führen sie unter „Mit Apple anmelden“ auf.</p>
+<p>Um sicherzugehen, dass die Anfrage von dir kommt, antworten wir an diese Adresse und löschen das Konto, sobald du bestätigst. Wir erledigen die Anfrage spätestens innerhalb von 30 Tagen.</p>
+<h3 id="was-geloscht-wird-und-wann">Was gelöscht wird und wann</h3>
+<p><strong>Sofort, wenn die Löschung durchgeht:</strong></p>
+<ul><li>die Daten der App auf dem Telefon, von dem aus du löschst: der Vorrat, die Einkaufsliste, der Kalender, das Kochbuch und die darin gespeicherten Rezepte, deine Bewertungen und Notizen, die Menschen, für die du kochst, und alles, was für sie eingegeben wurde, Abzeichen, Erinnerungen, Widgets, die IDs der Nutzungsstatistik, die heruntergeladenen Bilder der Gerichte und die Kopien, die die Fotoauswahl im Cache der App hinterlassen hat. Das sind Daten, die immer nur auf diesem Telefon waren; wir hatten sie nie.</li></ul>
+<p><strong>Sofort, auf unseren Servern:</strong></p>
+<ul><li>dein Kontodatensatz, dein Abo-Datensatz und dessen Mitteilungszeilen (die kleinen Datensätze, die wir aufbewahren, um dir Abo-E-Mails zu senden; keiner davon enthält deine E-Mail-Adresse);</li><li>die Löschung deiner Anmeldung wird in die Warteschlange gestellt.</li></ul>
+<p><strong>Normalerweise innerhalb von fünfzehn Minuten:</strong></p>
+<ul><li>deine Anmeldung bei unserem Authentifizierungsanbieter Supabase — die E-Mail-Adresse, der Name, die Adresse des Profilbilds und die Kontokennung, die Google oder Apple geteilt hat, und deine Sitzungen;</li><li>der Datensatz, den RevenueCat, Inc., das Premium-Käufe für uns prüft, unter der ID deines Kontos führt. Wir bitten RevenueCat, ihn zu löschen, und bitten nach etwa einer Stunde, einem Tag, drei Tagen und sieben Tagen erneut darum, falls ein Telefon, auf dem die App noch läuft, ihn neu angelegt hat;</li><li>die Zählung deiner KI-Anfragen für diesen und den letzten Monat — die Zahl, die unser Server unter einem aus deinem Konto berechneten Code führt, um Premium bei seinem Monatslimit für KI-Anfragen zu halten. Schlägt dieser Schritt fehl oder zählt ein anderes deiner Telefone in der Stunde nach der Löschung mit einem Ticket, das es bereits hatte, etwas hinzu, wird die Zählung am Ende des Folgemonats gelöscht.</li></ul>
+<p>Schlägt ein anderer Schritt fehl, versuchen wir es erneut, bis er gelingt; die Anfrage bleibt als interne Kontonummer gespeichert, damit die Löschung abgeschlossen werden kann. Wenn du dich mit Apple angemeldet hast und auf einem iPhone in der App löschst, bittet Apple dich noch einmal um Bestätigung, und sobald dein Konto gelöscht ist, nutzen wir den einmaligen Code von Apple, um Apple zu bitten, die Tokens der App für „Mit Apple anmelden“ zu widerrufen — nur wenn der Code zu dem Apple Account gehört, den dein Pinjula-Konto nutzt —, wodurch Pinjula aus deinem Apple Account entfernt wird. Wenn du diese Abfrage abbrichst, stoppt das die Löschung nicht; unter „Apple und Google“ steht, wann die App verbunden bleibt.</p>
+<h3 id="was-aufbewahrt-wird-und-warum">Was aufbewahrt wird und warum</h3>
+<ul><li><strong>Ein minimaler Kaufdatensatz, drei Jahre ab jeder Abbuchung.</strong> Für jede Abbuchung: der Store und seine Transaktionsnummer, das Produkt, der Tag der Abbuchung, Preis und Währung und — wenn du über den Premium-Bildschirm von Pinjula gekauft hast — die Version und Sprache dieses Bildschirms und der Tag, an dem du seine Kaufen-Schaltfläche gedrückt hast. Er enthält keinen Namen, keine E-Mail-Adresse, keine Konto-ID und keine Anmeldung. Wir bewahren ihn auf, damit wir zeigen können, dass du einem Abo zugestimmt hast (das kalifornische Gesetz über automatische Verlängerungen verlangt einen Nachweis der Zustimmung für drei Jahre).</li><li><strong>Namen von Gerichten.</strong> Der Name eines Gerichts, für das wir dir ein Rezept schreiben sollten, wurde ohne Verbindung zu deinem Konto oder deinem Telefon gezählt. Die Zählung bewahrt Datum und Uhrzeit auf, zu denen jeder Name zum ersten und zum letzten Mal angefragt wurde.</li><li><strong>Meldungen zu einem Rezept.</strong> Ein Problem, das du zu einem Rezept gemeldet hast, wurde ohne Verbindung zu deinem Konto oder deinem Telefon gespeichert; das Löschen deines Kontos kann es deshalb nicht finden. Es wird 12 Monate nach dem Senden gelöscht — oder früher, wenn du uns mit genug Angaben schreibst, um es zu finden (das Rezept, der Tag und der Wortlaut deiner Notiz).</li><li><strong>Warum du gegangen bist, wenn du es uns gesagt hast.</strong> Die freiwillige Antwort auf der Seite, die nach der Löschung angezeigt wird, wird 12 Monate ohne Verbindung zu deinem Konto oder deinem Telefon aufbewahrt und dann gelöscht.</li><li><strong>Nutzungsstatistik.</strong> Wenn du sie erlaubt hast, war das, was an PostHog gesendet wurde, nicht mit deinem Konto verknüpft, und das Löschen deines Kontos kann es nicht finden. Das Löschen deines Kontos löscht ihre IDs von dem Telefon, auf dem du es löschst.</li><li><strong>Dienstprotokolle.</strong> Die eigenen Protokollzeilen unseres Servers — Zählungen und Statuscodes, nie eine IP-Adresse, ein Konto oder etwas, das du gesendet hast — und das Protokoll von Cloudflare zu jeder Anfrage an unseren Server (Uhrzeit, angefragte Adresse, Antwortstatus, IP-Adresse, die technischen Header der Anfrage — die den kurzlebigen Premium-Pass enthalten können — und der aus der IP-Adresse ermittelte ungefähre Standort) werden von Cloudflare höchstens sieben Tage aufbewahrt. Supabase, das unseren Anmeldedienst betreibt, bewahrt seine Aufzeichnungen über Anmeldeanfragen, Sitzungserneuerungen und Anmeldeereignisse — mit IP-Adresse, Konto-ID, E-Mail-Adresse, Name und der Softwareversion des Geräts — in seinem eigenen Protokollspeicher nach seiner eigenen Aufbewahrungsdauer auf, die wir nicht festlegen (am 29. Oktober 2026 reichten sie bis zum ersten Tag des Projekts zurück, 51 Tage zuvor; am 7. Dezember 2026, wenn die ältesten 90 Tage alt sind, bitten wir Supabase, die zu löschen, die älter als 90 Tage sind); wir führen in unserer Datenbank kein gesondertes Anmeldeprotokoll. Sie werden aufbewahrt, um den Dienst zu betreiben und zu sichern.</li><li><strong>Missbrauchsprotokolle von Google.</strong> Google bewahrt die Anfragen an seine KI Gemini bis zu 55 Tage auf, um Missbrauch zu erkennen. Wir können sie deinem Konto nicht zuordnen; deshalb können wir sie weder finden noch löschen; sie laufen von selbst ab.</li><li><strong>Sicherungen.</strong> Supabase bewahrt derzeit bis zu sieben tägliche Sicherungen unserer Datenbank auf; was gelöscht wurde, bleibt also bis zu sieben Tage in einer Sicherung. In unserem aktuellen Tarif können wir sie nicht selbst öffnen oder wiederherstellen. Würde unser Projekt jemals wegen Inaktivität pausiert, würde Supabase eine Kopie der Datenbank in ihrem damaligen Zustand aufbewahren; Supabase sagt nicht, wie lange.</li><li><strong>Die Aufzeichnungen der Stores.</strong> Apple und Google bewahren ihre eigenen Aufzeichnungen über deine Käufe nach ihren eigenen Richtlinien auf.</li></ul>
+<h3 id="was-auf-telefonen-bleibt">Was auf Telefonen bleibt</h3>
+<p>Die Daten der App werden von dem Telefon gelöscht, auf dem du dein Konto löschst, mit drei Ausnahmen: Der kleine Eintrag, der die gelegentlichen Premium-Hinweise der App selten hält, wird gekürzt (seine Kalendertage und die letzte Markierung als gekocht entfallen), aber nicht gelöscht; die Mitgliedschaftsbibliothek behält ihren eigenen Cache deines Tarifs auf dem Gerät; und auf dem iPhone kann die eigene Anmeldesitzung von Google im Schlüsselbund die Deinstallation der App überdauern. Wenn du die App deinstallierst, wird gelöscht, was sie in ihrem eigenen Speicher aufbewahrt. Ein anderes Telefon, auf dem du die App genutzt hast, behält seine Daten, bis die App dort deinstalliert wird oder sich dort ein anderes Konto anmeldet und die App sie zuerst löscht. Eine Sicherung deines Telefons in deinem eigenen Google- oder Apple-Konto kann noch eine Kopie der Daten der App enthalten; wir haben keinen Zugriff darauf, und du kannst sie in den Sicherungseinstellungen deines Telefons löschen.</p>
+<h3 id="apple-und-google">Apple und Google</h3>
+<p>Das Löschen deines Kontos entfernt es aus unserem Dienst. Wenn du dich mit Apple angemeldet hast und auf einem iPhone in der App löschst, bitten wir Apple außerdem, die Tokens der App für „Mit Apple anmelden“ zu widerrufen; dadurch wird diese App aus den Apps entfernt, die mit deinem Apple Account verbunden sind (siehe oben). <strong>Sofern dieser Widerruf nicht durchgeht, bleibt die App mit deinem Apple Account verbunden</strong>, bis du sie selbst in den Einstellungen deines Apple Accounts unter „Mit Apple anmelden“ entfernst. Er geht nicht durch, wenn du auf Android oder per E-Mail löschst; wenn du die Abfrage von Apple abbrichst oder nicht innerhalb einer Minute beantwortest; wenn das Telefon mit einem anderen Apple Account angemeldet ist als dem, den dein Pinjula-Konto nutzt — dann wird nichts widerrufen, und der Apple Account deines Pinjula-Kontos bleibt verbunden; wenn eine auf dem Telefon unterbrochene Löschung beim nächsten Start der App abgeschlossen wird; oder wenn unser Server die Anfrage nicht stellen kann oder Apple sie nicht abschließt. Wenn du in der App löschst, trennt sie sich von der Anmeldebibliothek von Google. Das entfernt Pinjula auf dem iPhone aus den Verbindungen deines Google-Kontos zu Drittanbietern; auf Android tut es das nur für ein Konto, das während derselben Nutzungssitzung der App angemeldet wurde. Andernfalls, und wenn du per E-Mail löschst, kann Pinjula in diesen Verbindungen bleiben, bis du es selbst entfernst, unter den Verbindungen zu Drittanbietern in den Sicherheitseinstellungen deines Google-Kontos.</p>
+<p><strong>Ein Abo wird durch das Löschen deines Kontos nicht gekündigt.</strong> Wenn du Pinjula Premium abonniert hast, kündige es in deinen Abos im App Store oder bei Google Play; bis du das tust, verlängert der Store es weiter.</p>
+<h3 id="fragen">Fragen</h3>
+<p>support@pinjula.com. Die vollständige Datenschutzerklärung beschreibt alles, was die App speichert und sendet.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>

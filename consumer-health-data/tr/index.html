@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tüketici Sağlık Verileri Gizlilik Politikası — Pinjula</title>
+<meta name="description" content="Tüketici Sağlık Verileri Gizlilik Politikası — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="it" href="../it/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../it/" hreflang="it" lang="it">Italiano</a></p>
+<h1 id="tuketici-saglik-verileri-gizlilik-politikasi-pinjula">Tüketici Sağlık Verileri Gizlilik Politikası — Pinjula</h1>
+<p><strong>Yürürlük tarihi:</strong> 29 Ekim 2026</p>
+<p><strong>Kimin için:</strong> Washington, Nevada ve Connecticut sakinleri ve tüketici sağlık verileri oralarda toplanan herkes. Bu politikayı Amerika Birleşik Devletleri'ndeki herkese uygularız.</p>
+<h3 id="1-hangi-tuketici-saglik-verilerini-topluyoruz">1. Hangi tüketici sağlık verilerini topluyoruz</h3>
+<p>Hiçbirini. Alerjiler, intoleranslar, diyetler ve yemek pişirdiğin kişiler hakkında girdiğin diğer şeyler telefonunda kalır ve tarafımızdan toplanmaz.</p>
+<h3 id="2-nereden-geliyor">2. Nereden geliyor</h3>
+<p>Hiçbir yerden: hiçbirini toplamayız.</p>
+<h3 id="3-kim-aliyor">3. Kim alıyor</h3>
+<p>Hiç kimse. Paylaşacak hiçbir verimiz yok.</p>
+<h3 id="4-ucuncu-taraflar-ve-bagli-sirketler">4. Üçüncü taraflar ve bağlı şirketler</h3>
+<p>Tüketici sağlık verilerini hiçbir üçüncü tarafla paylaşmayız ve bağlı şirketimiz yoktur.</p>
+<h3 id="5-haklarin">5. Hakların</h3>
+<p>Tüketici sağlık verilerini toplayıp toplamadığımızı ya da paylaşıp paylaşmadığımızı doğrulamamızı ve, paylaşıldığı her üçüncü tarafın ve bağlı şirketin bir listesi dâhil (hiçbiri yoktur), bu verilere erişmeni sağlamamızı; herhangi bir rızanı geri çekmeyi; ve bu verileri silmemizi isteyebilirsin.</p>
+<ul><li><strong>Şu adrese yaz:</strong> support@pinjula.com. Talebini, yazdığın adrese cevap vererek doğrularız.</li><li><strong>45 gün içinde cevap veririz.</strong> Bu süreyi bir kez 45 gün uzatabiliriz ve nedenini sana söyleriz. Talepler ücretsizdir.</li></ul>
+<h3 id="6-reddedersek-itiraz">6. Reddedersek: itiraz</h3>
+<p>Bir talebi reddedersek, cevabımıza konu satırında &quot;İtiraz&quot; yazarak cevap ver. 45 gün içinde karar verir ve kararımızı açıklarız. Memnun kalmazsan eyaletinin başsavcısına şikâyette bulunabilirsin: Washington (https://www.atg.wa.gov), Connecticut (https://portal.ct.gov/ag) ya da Nevada (https://ag.nv.gov).</p>
+<h3 id="7-tuketici-saglik-verisi-satmayiz-ve-cografi-cit-kullanmayiz">7. Tüketici sağlık verisi satmayız ve coğrafi çit kullanmayız</h3>
+<p>Tüketici sağlık verisi satmayız ve onu toplamak ya da sana bir mesaj göndermek için bir sağlık tesisinin çevresinde coğrafi çit (geofence) kullanmayız.</p>
+<h3 id="8-nevada">8. Nevada</h3>
+<ul><li><strong>Bilgilerini incelemek ya da değiştirmemizi istemek için</strong> support@pinjula.com adresine yaz.</li><li><strong>Bu sayfadaki değişiklikler</strong> bu sayfada duyurulur; 9. bölüme bak.</li><li><strong>Hiçbir üçüncü taraf, Pinjula aracılığıyla web siteleri ya da uygulamalar genelinde senin hakkında tüketici sağlık verisi toplamaz.</strong></li><li><strong>Yürürlük tarihi:</strong> 29 Ekim 2026.</li></ul>
+<h3 id="9-degisiklikler">9. Değişiklikler</h3>
+<p>Bu sayfayı değiştirdiğimizde yeni metni burada yayımlar ve yukarıdaki yürürlük tarihini değiştiririz. Yasanın gerektirdiği yerde rızanı isteriz.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>
