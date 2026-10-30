@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions fréquentes — Pinjula</title>
+<meta name="description" content="Questions fréquentes — Pinjula">
+<link rel="icon" href="../../assets/logo-256.webp" type="image/webp">
+<link rel="alternate" hreflang="fr" href="https://pinjula.com/faq/fr/">
+<link rel="alternate" hreflang="en" href="https://pinjula.com/faq/">
+<link rel="alternate" hreflang="x-default" href="https://pinjula.com/faq/">
+<style>
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"IBM Plex Sans Condensed";src:url("/assets/fonts/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#F7F4F1;--surface:#FFFFFF;--fg:#16203F;--muted:#5B6480;--line:#E3DFDA;--chrome:#0A1F55;--on-chrome:#F3F5FC;--on-chrome-muted:#B9C0D8;--accent:#AB3F5B;--action:#F48CA4;--on-action:#16203F;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;--display:"IBM Plex Sans Condensed","IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1330;--surface:#131D42;--fg:#E7EAF6;--muted:#A0A8C4;--line:#263261;--chrome:#060F2E;--accent:#F48CA4;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--action);outline-offset:2px;border-radius:4px}
+.bar{background:var(--chrome);color:var(--on-chrome)}
+.bar nav{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--on-chrome);text-decoration:none;font:600 1.2rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:36px;height:36px;border-radius:9px}
+.bar .links{display:flex;gap:18px;flex-wrap:wrap}
+.bar .links a{color:var(--on-chrome-muted);text-decoration:none;font-size:.95rem}
+.bar .links a:hover{color:var(--on-chrome)}
+main.doc{max-width:760px;margin:0 auto;padding:8px 16px 56px}
+main.doc h1{font:600 2rem/1.2 var(--display);margin:32px 0 12px;text-wrap:balance}
+main.doc h2{font:600 1.45rem/1.25 var(--display);margin:36px 0 8px}
+main.doc h3{font-size:1.08rem;margin:26px 0 6px}
+p,li{overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{border-top:1px solid var(--line);margin-top:24px}
+footer .in{max-width:960px;margin:0 auto;padding:20px 16px 36px;color:var(--muted);font-size:.88rem;display:flex;gap:8px 20px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .legal{display:flex;gap:8px 20px;flex-wrap:wrap}
+footer .legal .label{font-weight:600;color:var(--fg)}
+footer .more{display:flex;gap:8px 20px;flex-wrap:wrap}
+.stores{display:flex;gap:12px;flex-wrap:wrap}
+.store{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px;text-decoration:none}
+.hub .meta{color:var(--muted);margin:0}
+.actions{list-style:none;margin:24px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.act{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--action);border-radius:12px;color:var(--muted);font-size:.95rem;text-decoration:none}
+a.act:hover{border-color:var(--accent)}
+.act .t{font:600 1.15rem/1.3 var(--display);color:var(--fg)}
+a.act .t{color:var(--accent)}
+.addr{font-weight:600;color:var(--fg);-webkit-user-select:all;user-select:all;overflow-wrap:anywhere}
+.related{margin:20px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.related p{margin:0}
+.related p+p{margin-top:6px}
+.hero{background:var(--chrome);color:var(--on-chrome)}
+.hero .in{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.hero h1{font:600 clamp(2.1rem,5vw,3.3rem)/1.08 var(--display);margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:1.12rem;color:var(--on-chrome-muted);max-width:34em;margin:0 0 24px}
+.hero img{width:184px;height:184px;border-radius:40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.soon{display:inline-block;background:var(--action);color:var(--on-action);font-weight:600;padding:10px 18px;border-radius:999px}
+.features{max-width:960px;margin:0 auto;padding:48px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.features h2{font:600 1.15rem/1.3 var(--display);margin:0 0 6px}
+.features p{margin:0;color:var(--muted)}
+.note{max-width:960px;margin:0 auto;padding:24px 16px 8px}
+.note p{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.93rem}
+@media (max-width:640px){.hero .in{grid-template-columns:1fr;padding-top:28px}.hero img{width:112px;height:112px;border-radius:26px;order:-1}}
+</style>
+</head>
+<body>
+<header class="bar" lang="en"><nav><a class="brand" href="../../"><img src="../../assets/logo-256.webp" alt="" width="36" height="36">Pinjula</a><span class="links"><a href="../../privacy/">Privacy</a></span></nav></header>
+<main class="doc">
+<p class="meta"><a href="../" hreflang="en" lang="en">English</a></p>
+<h1 id="questions-frequentes-pinjula">Questions fréquentes — Pinjula</h1>
+<p><strong>Dernière mise à jour :</strong> 31 octobre 2026</p>
+<h3 id="qu-est-ce-que-pinjula">Qu’est-ce que Pinjula?</h3>
+<p>Pinjula te propose des recettes maison et des repas complets de seize cuisines, filtrés selon les personnes pour qui tu cuisines : leurs allergies et leurs régimes, l’équipement de ta cuisine et, si tu le souhaites, seulement ce qui se trouve déjà dans ton garde-manger. L’app garde aussi un calendrier, un livre de recettes, un garde-manger et une liste d’épicerie.</p>
+<h3 id="pinjula-est-elle-gratuite">Pinjula est-elle gratuite?</h3>
+<p>Pinjula a un forfait gratuit et un abonnement, Premium. Le forfait gratuit comprend les suggestions des seize cuisines, les filtres d’allergies, de régimes et d’équipement, le garde-manger, la liste d’épicerie et la planification jusqu’à trois jours d’avance. Premium ajoute la planification de toute la semaine, les estimations nutritionnelles et les objectifs, les filtres céto et riche en protéines, l’aide de l’IA, facultative, et les widgets de l’écran d’accueil. <strong>Les filtres d’allergies ne font jamais partie de Premium.</strong></p>
+<h3 id="combien-coute-premium">Combien coûte Premium?</h3>
+<p>Aux États-Unis, 4,99 $ US par mois ou 34,99 $ US par année. Au Canada, 6,49 $ CA par mois. Premium commence par un essai gratuit d’une semaine pour les personnes admissibles; si tu n’annules pas avant la fin de l’essai, l’abonnement commence et se renouvelle automatiquement jusqu’à ce que tu l’annules. Ta boutique affiche le prix exact avant l’achat.</p>
+<h3 id="comment-annuler-premium">Comment annuler Premium?</h3>
+<p>Dans ta boutique. Sur iPhone ou iPad : Réglages → ton nom → Abonnements, ou https://apps.apple.com/account/subscriptions. Sur Android : Play Store → Profil → Paiements et abonnements → Abonnements. Supprimer l’app ou ton compte n’annule pas un abonnement.</p>
+<h3 id="comment-fonctionne-le-filtre-d-allergies">Comment fonctionne le filtre d’allergies?</h3>
+<p>Pour chaque personne pour qui tu cuisines, tu peux indiquer des allergies parmi treize groupes : les neuf principaux allergènes alimentaires des États-Unis, ainsi que le céleri, la moutarde, le lupin et les sulfites. Les recettes contenant les allergènes que tu indiques sont écartées, pour toute la tablée. Le filtre se fonde sur les ingrédients de chaque recette et ne peut pas savoir comment un produit que tu achètes a été fabriqué : vérifie toujours toi-même la liste complète des ingrédients. Pinjula est une aide, pas une garantie, et ce n’est pas un instrument médical.</p>
+<h3 id="quels-regimes-pinjula-prend-elle-en-charge">Quels régimes Pinjula prend-elle en charge?</h3>
+<p>Végétarien, végan et pescétarien, déterminés à partir des ingrédients de chaque recette. Avec Premium, céto et riche en protéines, qui se fondent sur des estimations nutritionnelles. Tu peux aussi éviter le lactose, séparément d’une allergie au lait, et indiquer les aversions de chaque personne.</p>
+<h3 id="ai-je-besoin-d-un-compte">Ai-je besoin d’un compte?</h3>
+<p>Non. Tout le forfait gratuit fonctionne sans connexion, et les personnes pour qui tu cuisines ainsi que ce qu’elles ont indiqué restent sur ton téléphone. Tu te connectes avec Apple ou Google seulement pour commencer Premium.</p>
+<h3 id="ou-sont-gardees-mes-donnees">Où sont gardées mes données?</h3>
+<p>Les personnes pour qui tu cuisines, leurs allergies et leurs régimes, tes évaluations, ton garde-manger et tes plans restent sur ton téléphone. Si tu te connectes, notre serveur garde ton compte et ton abonnement. Les statistiques d’utilisation ne sont envoyées que si tu les actives. Quand tu utilises une fonction d’IA, ce dont la demande a besoin passe par notre serveur vers Gemini de Google, et l’app te le demande avant la première fois. Les détails sont dans notre <a href="https://pinjula.com/privacy/notice/fr/">avis de confidentialité</a>.</p>
+<h3 id="d-ou-viennent-les-recettes">D’où viennent les recettes?</h3>
+<p>Les recettes, les notes culturelles et les traductions ont été rédigées par nos soins avec l’aide de l’IA et n’ont pas été relues par des cuisinières et cuisiniers de la culture concernée. Si quelque chose ne va pas, utilise « Signaler un problème avec cette recette » à la fin de la recette; cela nous aide à corriger le catalogue. Les images des plats et des ingrédients sont générées par IA.</p>
+<h3 id="que-fait-l-ia">Que fait l’IA?</h3>
+<p>Avec Premium, et seulement quand tu le demandes : un menu qui mélange les cuisines, un plan de cuisson pour tout un menu et une recette pour un plat que tu tapes et que le catalogue n’a pas. Une recette que l’IA écrit pour un plat que tu as tapé est marquée comme non relue et n’est pas vérifiée selon tes allergies : lis toi-même sa liste d’ingrédients.</p>
+<h3 id="pinjula-me-proposera-t-elle-toujours-les-memes-plats">Pinjula me proposera-t-elle toujours les mêmes plats?</h3>
+<p>Un plat que tu as cuisiné ou évalué reste hors de tes suggestions pendant une semaine, ou quatre jours si tu l’as adoré. Un plat que tu as seulement vu n’est pas mis de côté. Tu peux réinitialiser cela dans les Réglages.</p>
+<h3 id="quels-pays-langues-et-appareils">Quels pays, langues et appareils?</h3>
+<p>Pinjula est offerte aux États-Unis et au Canada. L’app est en anglais, en français, en espagnol, en allemand, en italien et en turc. Elle fonctionne sur iPhone et iPad avec iOS 16 ou une version ultérieure, et sur les téléphones et tablettes Android avec Android 7.0 ou une version ultérieure.</p>
+<h3 id="comment-supprimer-mon-compte">Comment supprimer mon compte?</h3>
+<p>Consulte <a href="https://pinjula.com/delete-account/fr/">Supprimer votre compte</a>. Si tu ne t’es jamais connecté, il n’y a pas de compte : désinstaller l’app supprime tout ce qu’elle garde sur ton téléphone.</p>
+<h3 id="comment-vous-joindre">Comment vous joindre?</h3>
+<p>Écris à support@pinjula.com.</p>
+</main>
+<footer lang="en"><div class="in"><span>Pinjula · an independent developer</span><nav class="more" aria-label="More"><a href="../../faq/">FAQ</a><a href="../../press/">Press kit</a></nav><nav class="legal" aria-label="Legal"><span class="label">Legal</span><a href="../../privacy/">Privacy</a><a href="../../consumer-health-data/">Consumer Health Data Privacy Policy</a><a href="../../terms/">Terms of Use</a><a href="../../provider-information/">Seller information</a><a href="mailto:support@pinjula.com">support@pinjula.com</a></nav></div></footer>
+</body>
+</html>
