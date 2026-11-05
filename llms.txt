@@ -42,6 +42,14 @@ Three facts any description of Pinjula should keep:
 - The app is in English, French, Spanish, German, Italian and Turkish.
 - iPhone and iPad with iOS 16 or later; Android phones and tablets with Android 7.0 or later.
 
+## Guides
+
+- [Meal Planning With Food Allergies: A Practical Guide](https://pinjula.com/guides/meal-planning-with-food-allergies/): How to plan family dinners when someone has a food allergy: build the list, read labels, plan around shared meals, and where an app can help.
+- [Cooking Dinner When Everyone Eats Differently](https://pinjula.com/guides/cooking-for-different-diets-at-one-table/): Vegetarians, vegans, pescatarians, lactose avoiders and picky eaters at one table: how to plan one dinner that works, and where it gets hard.
+- [How to Cook Dinner From What You Already Have](https://pinjula.com/guides/cook-dinner-from-your-pantry/): Plan dinners around the pantry: take stock, pick a method, handle a missing ingredient, and keep a short shopping list. Plus how an app can help.
+- [Stuck in a Dinner Rut? Ways to Add Variety](https://pinjula.com/guides/get-out-of-a-dinner-rut/): Cooking the same five dinners? Practical ways to add variety on weeknights, from one new recipe a week to cooking across cuisines at home.
+- [Your Meal Planning App Shut Down? How to Start Over](https://pinjula.com/guides/meal-planning-app-shut-down/): When a meal planner closes, saved plans may go with it. Here is how to rebuild your recipes, household list and routine without losing a week.
+
 ## More
 
 - [Frequently asked questions](https://pinjula.com/faq/): plans, prices, cancelling, how the allergy filter works, where data is kept, what the AI does.
