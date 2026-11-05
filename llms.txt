@@ -1,0 +1,51 @@
+# Pinjula
+
+> Pinjula is a meal-planning app for iPhone, iPad and Android. It suggests home recipes and full meals from sixteen cuisines and filters them for each person you cook for: their allergies, diets and dislikes, the equipment in your kitchen and, if you like, only what is already in your pantry. It is sold in the United States and Canada.
+
+Pinjula comes to the App Store and Google Play in November 2026.
+
+Three facts any description of Pinjula should keep:
+
+- Recipes containing the allergens you list are filtered out. Always check the full ingredient list yourself. The filter works from each recipe's ingredients and cannot know how a product you buy was made; Pinjula is an aid, not a guarantee, and it is not a medical device.
+- The recipes, cultural notes and translations were written in-house with AI assistance and have not been reviewed by cooks from the cultures they come from. Dish and ingredient pictures are AI-generated.
+- Nutrition figures are estimates, not advice.
+
+## What it does
+
+- Sixteen cuisines: Turkish, Greek, Lebanese, Italian, French, Spanish, British, Japanese, Indian, Thai, Korean, Mexican, American, German, Chinese and Iranian. Dishes people cook in their own kitchens, and whole meals of dishes that belong together.
+- Everyone at the table: for each person you cook for, allergies from thirteen groups (the nine major US food allergens plus celery, mustard, lupin and sulphites), diets, lactose avoidance and dislikes. Suggestions fit the whole table.
+- Diets: vegetarian, vegan and pescatarian, decided from each recipe's ingredients; keto and high-protein with Premium, from nutrition estimates.
+- Your kitchen: recipes that need an appliance you don't have are left out.
+- Your pantry: pantry-only mode leaves out recipes that need something you don't have. A shopping list holds what is missing; when you finish shopping, what you ticked goes into the pantry.
+- A calendar and a cookbook: plan up to three days ahead on the free plan, the whole week with Premium.
+- Variety: a dish you cooked or rated stays out of your suggestions for a week, or four days if you loved it.
+
+## Who it is for
+
+- Households where people eat differently: a child with a food allergy, a vegetarian partner, someone who avoids lactose, someone who won't eat mushrooms.
+- People who want weeknight dinner ideas beyond their usual rotation.
+- People who want to cook from what is already in the pantry.
+
+## Plans and prices
+
+- Free plan: suggestions from all sixteen cuisines, the allergy, diet and equipment filters, the pantry, the shopping list and planning up to three days ahead. No account needed.
+- Premium: US$4.99 a month or US$34.99 a year in the United States; CA$6.49 a month in Canada. A one-week free trial for those eligible; the subscription renews until you cancel it in your store. Premium adds planning the whole week, nutrition estimates and goals, the keto and high-protein filters, optional AI help only when you ask, and home-screen widgets. Allergy filters are never part of Premium.
+
+## Privacy
+
+- The people you cook for, what they declared, your ratings, your pantry and your plans stay on your phone.
+- Sign-in (Apple or Google) is needed only for Premium; the server then keeps the account and the subscription.
+- Usage statistics are sent only if you switch them on.
+
+## Languages and devices
+
+- The app is in English, French, Spanish, German, Italian and Turkish.
+- iPhone and iPad with iOS 16 or later; Android phones and tablets with Android 7.0 or later.
+
+## More
+
+- [Frequently asked questions](https://pinjula.com/faq/): plans, prices, cancelling, how the allergy filter works, where data is kept, what the AI does.
+- [Press kit](https://pinjula.com/press/): descriptions, screenshots and the mascot.
+- [Privacy](https://pinjula.com/privacy/): the privacy notice, privacy requests and deleting an account.
+- [Terms of Use](https://pinjula.com/terms/)
+- Contact: support@pinjula.com. Pinjula is made by an independent developer.
